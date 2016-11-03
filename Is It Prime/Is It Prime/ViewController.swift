@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var answerText: UILabel!
+    @IBOutlet weak var numberInput: UITextField!
+    
+    @IBAction func button(_ sender: Any) {
+        if let enteredUserString = numberInput.text{
+            let enteredUserNum = Int(enteredUserString)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
